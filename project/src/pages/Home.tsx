@@ -43,7 +43,12 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24 animate-fade-in">
+      <section
+        className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -173,7 +178,12 @@ const Home = () => {
       <FAQ />
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-700 animate-fade-in">
+      <section
+        className="py-16 bg-blue-700"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Prêt à transformer votre activité ?
