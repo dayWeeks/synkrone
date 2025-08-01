@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Cog, Bot, Wrench, ArrowRight, Check } from 'lucide-react';
+import { Search, Cog, Bot, ArrowRight, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -43,19 +43,6 @@ const Services = () => {
       duration: "2-3 semaines",
       price: "À partir de 800€"
     },
-    {
-      icon: <Wrench className="h-12 w-12 text-orange-500" />,
-      title: "Maintenance & évolution",
-      description: "Accompagnement continu pour optimiser vos automatisations",
-      features: [
-        "Monitoring des performances",
-        "Ajustements et optimisations",
-        "Nouvelles fonctionnalités",
-        "Support technique prioritaire"
-      ],
-      duration: "Mensuel",
-      price: "À partir de 150€/mois"
-    }
   ];
 
   const useCases = [
@@ -84,7 +71,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Nos services d'<span className="text-blue-700">automatisation IA</span>
@@ -97,47 +84,19 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start space-x-4 mb-6">
-                  <div className="flex-shrink-0">
-                    {service.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4">
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="space-y-3 mb-6">
-                  {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-2">
-                      <Check className="h-4 w-4 text-emerald-500 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="flex justify-between items-center pt-4 border-t border-gray-200">
-                  <div className="text-sm text-gray-500">
-                    <div>Durée : {service.duration}</div>
-                    <div className="font-semibold text-gray-900">{service.price}</div>
-                  </div>
-                  <Link
-                    to="/contact"
-                    className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200 flex items-center group"
-                  >
-                    Demander un devis
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
-                  </Link>
-                </div>
+              <div
+                key={index}
+                title={service.description}
+                className="text-center p-8 rounded-xl border hover:shadow-xl hover:bg-slate-100 hover:scale-105 transition-transform duration-300 cursor-pointer"
+              >
+                <div className="flex justify-center mb-4">{service.icon}</div>
+                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                <hr className="border-gray-200 mb-4" />
+                <p className="text-gray-600">{service.description}</p>
               </div>
             ))}
           </div>
@@ -145,7 +104,7 @@ const Services = () => {
       </section>
 
       {/* Use Cases Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -195,7 +154,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -229,7 +188,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-700">
+      <section className="py-16 bg-blue-700 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Prêt à automatiser votre activité ?

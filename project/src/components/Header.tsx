@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Bot } from 'lucide-react';
+import { Menu, X, Bot, Sun, Moon } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(
+    typeof document !== 'undefined' && document.documentElement.classList.contains('dark')
+  );
   const location = useLocation();
 
   const navigation = [
     { name: 'Accueil', href: '/' },
     { name: 'À propos', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Témoignages', href: '/testimonials' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -18,8 +20,14 @@ const Header = () => {
     return location.pathname === href;
   };
 
+  const toggleTheme = () => {
+    const nowDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+    setIsDark(nowDark);
+  };
+
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -43,6 +51,12 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </button>
             <Link
               to="/contact"
               className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
@@ -80,6 +94,23 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  setIsMenuOpen(false);
+                }}
+                className="w-full text-left px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+              >
+                {isDark ? (
+                  <div className="flex items-center space-x-2">
+                    <Sun className="h-5 w-5" /> <span>Mode clair</span>
+                  </div>
+                ) : (
+                  <div className="flex items-center space-x-2">
+                    <Moon className="h-5 w-5" /> <span>Mode sombre</span>
+                  </div>
+                )}
+              </button>
               <Link
                 to="/contact"
                 onClick={() => setIsMenuOpen(false)}

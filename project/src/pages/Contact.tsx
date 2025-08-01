@@ -241,34 +241,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Un projet urgent ?
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Pour les projets urgents ou si vous préférez un contact direct, 
-            n'hésitez pas à m'appeler ou m'envoyer un message WhatsApp.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+596696XXXXXX"
-              className="bg-emerald-500 text-white px-8 py-4 rounded-lg hover:bg-emerald-600 transition-colors duration-200 font-semibold"
-            >
-              Appeler maintenant
-            </a>
-            <a
-              href="https://wa.me/596696XXXXXX"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white px-8 py-4 rounded-lg hover:bg-green-600 transition-colors duration-200 font-semibold"
-            >
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
