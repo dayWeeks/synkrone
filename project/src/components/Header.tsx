@@ -35,7 +35,7 @@ const Header = () => {
             <img
               src="/logo-synkrone.png"
               alt="Logo Synkrone"
-              className="h-8 w-auto transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+              className="h-20 w-auto sm:h-16"
             />
           </Link>
 
