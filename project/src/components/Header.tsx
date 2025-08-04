@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Bot, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +31,12 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Bot className="h-8 w-8 text-blue-700" />
-            <span className="text-xl font-bold text-gray-900">Synkrone</span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/logo-synkrone.png"
+              alt="Logo Synkrone"
+              className="h-8 w-auto transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+            />
           </Link>
 
           {/* Desktop Navigation */}
