@@ -29,13 +29,13 @@ const Header = () => {
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20 sm:h-24 md:h-28 lg:h-32">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
               src="/logo-synkrone.png"
               alt="Logo Synkrone"
-              className="h-20 w-auto sm:h-16"
+              className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
             />
           </Link>
 
