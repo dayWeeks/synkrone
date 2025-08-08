@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bot, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -17,8 +17,11 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Bot className="h-8 w-8 text-emerald-400" />
-              <span className="text-xl font-bold">Synkrone</span>
+              <img
+                src="/logo-synkrone.png"
+                alt="Logo Synkrone"
+                className="h-8 sm:h-10 md:h-12 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               L'automatisation IA accessible pour les professionnels martiniquais. 
