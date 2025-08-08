@@ -200,7 +200,7 @@ const Contact = () => {
                   de votre projet d'automatisation.
                 </p>
                 <a
-                  href="https://calendly.com/jordan-autoia"
+                  href="https://calendly.com/jordanmmo/decouverte-ia-pro?month=2025-08"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-semibold group"
