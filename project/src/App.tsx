@@ -10,15 +10,26 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   useEffect(() => {
-    const win = window as Window & typeof globalThis & {
-      AOS?: { init: (options?: Record<string, unknown>) => void };
-    };
-    if (win.AOS) {
-      win.AOS.init({
-        once: true,
-        disable: 'phone',
-      });
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
     }
+
+    const elements = document.querySelectorAll('.reveal');
+    elements.forEach((el, i) => {
+      (el as HTMLElement).style.transitionDelay = `${i * 100}ms`;
+    });
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   return (
