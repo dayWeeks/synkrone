@@ -19,7 +19,7 @@ const faqs = [
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <section className="py-16 bg-gray-50 animate-fade-in" id="faq">
+    <section className="reveal py-16 bg-gray-50" id="faq">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">FAQ</h2>
         <div className="space-y-4">

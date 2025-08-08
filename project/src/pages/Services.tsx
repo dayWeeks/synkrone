@@ -70,13 +70,8 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section
-        className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
-      >
+        {/* Hero Section */}
+        <section className="reveal bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Nos services d'<span className="text-blue-700">automatisation IA</span>
@@ -88,18 +83,16 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Grid */}
-      <section className="py-16 bg-white" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+        {/* Services Grid */}
+        <section className="reveal py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                title={service.description}
-                data-aos="zoom-in"
-                data-aos-delay={String(index * 100)}
-                className="text-center p-8 rounded-xl border shadow-xl transition duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
-              >
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  title={service.description}
+                  className="reveal text-center p-8 rounded-xl border shadow-xl transition duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer"
+                >
                 <div className="flex justify-center mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                 <hr className="border-gray-200 mb-4" />
@@ -110,8 +103,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Use Cases Section */}
-      <section className="py-16 bg-gray-50" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-out">
+        {/* Use Cases Section */}
+        <section className="reveal py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -122,14 +115,12 @@ const Services = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {useCases.map((useCase, index) => (
-              <div
-                key={index}
-                data-aos="fade-left"
-                data-aos-delay={String(index * 100)}
-                className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
-              >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {useCases.map((useCase, index) => (
+                <div
+                  key={index}
+                  className="reveal bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
                   {useCase.type}
                 </h3>
@@ -165,8 +156,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-16 bg-white animate-fade-in">
+        {/* Process Section */}
+        <section className="reveal py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -178,15 +169,15 @@ const Services = () => {
           </div>
           
           <div className="bg-gradient-to-r from-blue-50 to-emerald-50 rounded-2xl p-8">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-              {[
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+                {[ 
                 { step: "1", title: "Échange initial", desc: "Découverte de vos besoins" },
                 { step: "2", title: "Audit détaillé", desc: "Analyse de vos processus" },
                 { step: "3", title: "Proposition", desc: "Devis personnalisé" },
                 { step: "4", title: "Développement", desc: "Création des automatisations" },
                 { step: "5", title: "Formation", desc: "Accompagnement et suivi" }
-              ].map((item, index) => (
-                <div key={index} className="text-center">
+                ].map((item, index) => (
+                <div key={index} className="reveal text-center">
                   <div className="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                     {item.step}
                   </div>
@@ -199,13 +190,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section
-        className="py-16 bg-blue-700"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
-      >
+        {/* CTA Section */}
+        <section className="reveal py-16 bg-blue-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Prêt à automatiser votre activité ?
@@ -214,13 +200,13 @@ const Services = () => {
             Parlons de votre projet ! Réservez un échange gratuit de 30 minutes 
             pour identifier vos opportunités d'automatisation.
           </p>
-          <Link
-            to="/contact"
-            className="bg-white text-blue-700 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold inline-flex items-center group"
-          >
-            Demander un audit gratuit
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-          </Link>
+            <Link
+              to="/contact"
+              className="btn bg-white text-blue-700 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold inline-flex items-center group"
+            >
+              Demander un audit gratuit
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
         </div>
       </section>
     </div>

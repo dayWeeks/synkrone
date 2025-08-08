@@ -6,12 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer
-      className="bg-gray-50 text-gray-900"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-    >
+    <footer className="reveal bg-gray-50 text-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo et description */}
@@ -20,7 +15,7 @@ const Footer = () => {
               <img
                 src="/logo-synkrone.png"
                 alt="Logo Synkrone"
-                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
+                className="footer-logo h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
               />
             </div>
             <p className="text-gray-600 mb-6 max-w-md">
@@ -40,22 +35,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                <Link to="/" className="nav-link text-gray-600">
                   Accueil
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                <Link to="/about" className="nav-link text-gray-600">
                   À propos
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                <Link to="/services" className="nav-link text-gray-600">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                <Link to="/contact" className="nav-link text-gray-600">
                   Contact
                 </Link>
               </li>

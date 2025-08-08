@@ -43,12 +43,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section
-        className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
-      >
+      <section className="reveal bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -60,26 +55,26 @@ const Home = () => {
               Des solutions d'automatisation IA sur mesure pour les entrepreneurs martiniquais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/contact"
-                className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-all duration-200 font-semibold flex items-center justify-center group"
-              >
-                Réservez un échange gratuit
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-              </Link>
-              <Link
-                to="/services"
-                className="border-2 border-blue-700 text-blue-700 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 font-semibold"
-              >
-                Découvrir nos services
-              </Link>
-            </div>
+                <Link
+                  to="/contact"
+                  className="btn bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-all duration-200 font-semibold flex items-center justify-center group"
+                >
+                  Réservez un échange gratuit
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                </Link>
+                <Link
+                  to="/services"
+                  className="btn border-2 border-blue-700 text-blue-700 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 font-semibold"
+                >
+                  Découvrir nos services
+                </Link>
+              </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-white animate-fade-in">
+      <section className="reveal py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -90,26 +85,26 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div className="flex justify-center mb-4">
-                  {benefit.icon}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="reveal text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex justify-center mb-4">
+                    {benefit.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600">
+                    {benefit.description}
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-600">
-                  {benefit.description}
-                </p>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
         </div>
       </section>
 
       {/* How it works Section */}
-      <section className="py-16 bg-gray-50 animate-fade-in">
+      <section className="reveal py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -120,10 +115,10 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="relative">
-                <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {steps.map((step, index) => (
+                <div key={index} className="relative reveal">
+                  <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="text-4xl font-bold text-blue-700 mb-4">
                     {step.number}
                   </div>
@@ -146,7 +141,7 @@ const Home = () => {
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-16 bg-white animate-fade-in">
+      <section className="reveal py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
@@ -154,17 +149,17 @@ const Home = () => {
             </h2>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
-              <div className="flex flex-col items-center">
+              <div className="reveal flex flex-col items-center">
                 <Users className="h-12 w-12 text-emerald-500 mb-4" />
                 <div className="text-3xl font-bold text-gray-900">50+</div>
                 <div className="text-gray-600">Entrepreneurs accompagnés</div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="reveal flex flex-col items-center">
                 <CheckCircle className="h-12 w-12 text-blue-700 mb-4" />
                 <div className="text-3xl font-bold text-gray-900">80%</div>
                 <div className="text-gray-600">De temps gagné en moyenne</div>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="reveal flex flex-col items-center">
                 <Lightbulb className="h-12 w-12 text-orange-500 mb-4" />
                 <div className="text-3xl font-bold text-gray-900">100%</div>
                 <div className="text-gray-600">Solutions personnalisées</div>
@@ -178,12 +173,7 @@ const Home = () => {
       <FAQ />
 
       {/* CTA Section */}
-      <section
-        className="py-16 bg-blue-700"
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-easing="ease-in-out"
-      >
+      <section className="reveal py-16 bg-blue-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Prêt à transformer votre activité ?
@@ -192,13 +182,13 @@ const Home = () => {
             Réservez dès maintenant un échange gratuit de 30 minutes pour découvrir 
             comment l'IA peut révolutionner votre quotidien professionnel.
           </p>
-          <Link
-            to="/contact"
-            className="bg-white text-blue-700 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold inline-flex items-center group"
-          >
-            Commencer maintenant
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-          </Link>
+            <Link
+              to="/contact"
+              className="btn bg-white text-blue-700 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 font-semibold inline-flex items-center group"
+            >
+              Commencer maintenant
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+            </Link>
         </div>
       </section>
     </div>
