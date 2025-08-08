@@ -158,7 +158,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-blue-700 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">jordan@autoia-martinique.fr</p>
+                      <p className="text-gray-600">jordan.businesspro8@gmail.com</p>
                       <p className="text-sm text-gray-500 mt-1">
                         Réponse garantie sous 24h
                       </p>
@@ -169,7 +169,7 @@ const Contact = () => {
                     <Phone className="h-6 w-6 text-emerald-500 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">WhatsApp</h3>
-                      <p className="text-gray-600">+596 696 XX XX XX</p>
+                      <p className="text-gray-600">0696 01 31 07</p>
                       <p className="text-sm text-gray-500 mt-1">
                         Pour une réponse rapide
                       </p>

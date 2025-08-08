@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-gray-900 text-white"
+      className="bg-gray-50 text-gray-900"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
@@ -20,15 +20,15 @@ const Footer = () => {
               <img
                 src="/logo-synkrone.png"
                 alt="Logo Synkrone"
-                className="h-8 sm:h-10 md:h-12 w-auto"
+                className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto"
               />
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">
-              L'automatisation IA accessible pour les professionnels martiniquais. 
+            <p className="text-gray-600 mb-6 max-w-md">
+              L'automatisation IA accessible pour les professionnels martiniquais.
               Transformons ensemble vos tâches répétitives en processus automatisés.
             </p>
             <div className="flex space-x-4">
-              <div className="flex items-center space-x-2 text-gray-300">
+              <div className="flex items-center space-x-2 text-gray-600">
                 <MapPin className="h-4 w-4" />
                 <span className="text-sm">Martinique, Antilles françaises</span>
               </div>
@@ -40,22 +40,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <Link to="/" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
                   Accueil
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <Link to="/about" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
                   À propos
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <Link to="/services" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors duration-200">
+                <Link to="/contact" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
                   Contact
                 </Link>
               </li>
@@ -66,20 +66,20 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex items-center space-x-2 text-gray-300">
+              <li className="flex items-center space-x-2 text-gray-600">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">contact@synkrone.fr</span>
+                <span className="text-sm">jordan.businesspro8@gmail.com</span>
               </li>
-              <li className="flex items-center space-x-2 text-gray-300">
+              <li className="flex items-center space-x-2 text-gray-600">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">+596 696 XX XX XX</span>
+                <span className="text-sm">0696 01 31 07</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-gray-200 mt-12 pt-8 text-center">
+          <p className="text-gray-500 text-sm">
             © {currentYear} Synkrone. Tous droits réservés. Créé avec passion en Martinique.
           </p>
         </div>
