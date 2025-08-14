@@ -158,7 +158,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-blue-700 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
-                      <p className="text-gray-600">jordan.businesspro8@gmail.com</p>
+                      <p className="text-gray-600">contact@synkrone-ia.com</p>
                       <p className="text-sm text-gray-500 mt-1">
                         Réponse garantie sous 24h
                       </p>
