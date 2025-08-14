@@ -45,8 +45,8 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-        {/* Hero Section */}
-        <section className="reveal bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
@@ -61,8 +61,8 @@ const About = () => {
         </div>
       </section>
 
-        {/* Mission Section */}
-        <section className="reveal py-16 bg-white">
+      {/* Mission Section */}
+      <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
@@ -99,8 +99,8 @@ const About = () => {
         </div>
       </section>
 
-        {/* Approach Section */}
-        <section className="reveal py-16 bg-gray-50">
+      {/* Approach Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -112,9 +112,9 @@ const About = () => {
             </p>
           </div>
           
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {approach.map((item, index) => (
-                <div key={index} className="reveal bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {approach.map((item, index) => (
+              <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="flex justify-center mb-6">
                   {item.icon}
                 </div>
@@ -130,8 +130,8 @@ const About = () => {
         </div>
       </section>
 
-        {/* Values Section */}
-        <section className="reveal py-16 bg-white">
+      {/* Values Section */}
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
@@ -142,9 +142,9 @@ const About = () => {
             </p>
           </div>
           
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {values.map((value, index) => (
-                <div key={index} className="reveal text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => (
+              <div key={index} className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
                 <div className="flex justify-center mb-4">
                   {value.icon}
                 </div>
@@ -160,8 +160,8 @@ const About = () => {
         </div>
       </section>
 
-        {/* Local Expertise Section */}
-        <section className="reveal py-16 bg-blue-700">
+      {/* Local Expertise Section */}
+      <section className="py-16 bg-blue-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
@@ -174,26 +174,26 @@ const About = () => {
               adaptées à votre environnement professionnel.
             </p>
             
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                <div className="reveal text-center">
-                  <div className="text-3xl font-bold text-white mb-2">100%</div>
-                  <div className="text-blue-100">Solutions personnalisées</div>
-                </div>
-                <div className="reveal text-center">
-                  <div className="text-3xl font-bold text-white mb-2">24h</div>
-                  <div className="text-blue-100">Délai de réponse maximum</div>
-                </div>
-                <div className="reveal text-center">
-                  <div className="text-3xl font-bold text-white mb-2">Local</div>
-                  <div className="text-blue-100">Accompagnement de proximité</div>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">100%</div>
+                <div className="text-blue-100">Solutions personnalisées</div>
               </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">24h</div>
+                <div className="text-blue-100">Délai de réponse maximum</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-white mb-2">Local</div>
+                <div className="text-blue-100">Accompagnement de proximité</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-        {/* CTA Section */}
-        <section className="reveal py-16 bg-gray-50">
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Prêt à transformer votre activité ?
@@ -202,20 +202,20 @@ const About = () => {
             Découvrez comment Synkrone peut automatiser vos processus métier 
             et libérer votre potentiel entrepreneurial.
           </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="btn bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-all duration-200 font-semibold"
-              >
-                Demander un audit gratuit
-              </a>
-              <a
-                href="/services"
-                className="btn border-2 border-blue-700 text-blue-700 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 font-semibold"
-              >
-                Découvrir nos services
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-all duration-200 font-semibold"
+            >
+              Demander un audit gratuit
+            </a>
+            <a
+              href="/services"
+              className="border-2 border-blue-700 text-blue-700 px-8 py-4 rounded-lg hover:bg-blue-50 transition-all duration-200 font-semibold"
+            >
+              Découvrir nos services
+            </a>
+          </div>
         </div>
       </section>
     </div>
