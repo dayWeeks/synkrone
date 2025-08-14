@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="reveal bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
+      <section className="bg-gradient-to-br from-blue-50 to-emerald-50 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
             Parlons de votre <span className="text-blue-700">projet</span>
@@ -45,11 +45,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="reveal py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Contact Form */}
-              <div className="reveal bg-gray-50 rounded-2xl p-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div className="bg-gray-50 rounded-2xl p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 Demande de contact
               </h2>
@@ -147,14 +147,14 @@ const Contact = () => {
               )}
             </div>
 
-              {/* Contact Info */}
-              <div className="reveal space-y-8">
+            {/* Contact Info */}
+            <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Contactez-moi directement
                 </h2>
-                  <div className="space-y-6">
-                    <div className="reveal flex items-start space-x-4">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-blue-700 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Email</h3>
@@ -165,7 +165,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                    <div className="reveal flex items-start space-x-4">
+                  <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-emerald-500 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">WhatsApp</h3>
@@ -176,7 +176,7 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                    <div className="reveal flex items-start space-x-4">
+                  <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-orange-500 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900">Localisation</h3>
@@ -190,7 +190,7 @@ const Contact = () => {
               </div>
 
               {/* Calendly Section */}
-                <div className="reveal bg-blue-50 p-6 rounded-xl">
+              <div className="bg-blue-50 p-6 rounded-xl">
                 <div className="flex items-center space-x-3 mb-4">
                   <Calendar className="h-6 w-6 text-blue-700" />
                   <h3 className="font-semibold text-gray-900">Réservez directement</h3>
@@ -199,12 +199,12 @@ const Contact = () => {
                   Planifiez un appel découverte gratuit de 30 minutes pour discuter 
                   de votre projet d'automatisation.
                 </p>
-                  <a
-                    href="https://calendly.com/jordanmmo/decouverte-ia-pro?month=2025-08"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn inline-flex items-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-semibold group"
-                  >
+                <a
+                  href="https://calendly.com/jordanmmo/decouverte-ia-pro?month=2025-08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-semibold group"
+                >
                   Réserver un créneau
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-200" />
                 </a>

@@ -45,10 +45,10 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`nav-link px-3 py-2 text-sm font-medium ${
+                className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   isActiveLink(item.href)
                     ? 'text-blue-700 border-b-2 border-blue-700'
-                    : 'text-gray-700'
+                    : 'text-gray-700 hover:text-blue-700'
                 }`}
               >
                 {item.name}
@@ -62,7 +62,7 @@ const Header = () => {
             </button>
             <Link
               to="/contact"
-              className="btn bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
+              className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
             >
               Contact
             </Link>
@@ -88,10 +88,10 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`nav-link block px-3 py-2 text-base font-medium ${
+                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
                     isActiveLink(item.href)
                       ? 'text-blue-700 bg-blue-50'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      : 'text-gray-700 hover:text-blue-700 hover:bg-gray-50'
                   }`}
                 >
                   {item.name}
@@ -117,7 +117,7 @@ const Header = () => {
               <Link
                 to="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="btn block w-full text-left bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium mt-4"
+                className="block w-full text-left bg-blue-700 text-white px-3 py-2 rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium mt-4"
               >
                 Contact
               </Link>
